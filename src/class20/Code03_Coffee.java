@@ -79,7 +79,7 @@ public class Code03_Coffee {
 
 	// 优良一点的暴力尝试的方法
 	public static int minTime1(int[] arr, int n, int a, int b) {
-		PriorityQueue<Machine> heap = new PriorityQueue<Machine>(new MachineComparator());
+		PriorityQueue<Machine> heap = new PriorityQueue<>(new MachineComparator());
 		for (int i = 0; i < arr.length; i++) {
 			heap.add(new Machine(0, arr[i]));
 		}

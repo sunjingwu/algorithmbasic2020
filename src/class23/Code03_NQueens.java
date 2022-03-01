@@ -1,5 +1,8 @@
 package class23;
 
+/**
+ * https://leetcode-cn.com/problems/n-queens-ii/
+  */
 public class Code03_NQueens {
 
 	public static int num1(int n) {
