@@ -2,13 +2,18 @@ package class01;
 
 public class Code06_BSAwesome {
 
+	// 局部最小出现的位置
 	public static int getLessIndex(int[] arr) {
 		if (arr == null || arr.length == 0) {
 			return -1; // no exist
 		}
+
+		// 一个或尾部
 		if (arr.length == 1 || arr[0] < arr[1]) {
 			return 0;
 		}
+
+		// 尾
 		if (arr[arr.length - 1] < arr[arr.length - 2]) {
 			return arr.length - 1;
 		}
